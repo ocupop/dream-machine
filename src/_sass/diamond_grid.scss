@@ -1,0 +1,31 @@
+.diamond-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.clip-path {
+  width: 0;
+  height: 0;
+}
+
+.svg-clipped {
+  display: block;
+  position: relative;
+  width: 385px;
+  height: 385px;
+  margin: 0 auto 5px auto;
+  background-image: url(/uploads/sled.jpeg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &.diamond{
+    // -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    // clip-path: url("#clip-diamond-demo");
+    // &:nth-of-type(2n) {
+    //   margin-top: 150px;
+    //   margin-left: -150px;
+    // }
+  } 
+}
