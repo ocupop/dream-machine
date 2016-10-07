@@ -5,6 +5,9 @@ description:
 baseurl: "" # the subpath of your site, e.g. /clientname
 url: "" # the base hostname & protocol for your site
 
+collections:
+  dreamers:
+    output: true
 
 # Build settings
 safe: false
