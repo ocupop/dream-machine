@@ -1,4 +1,4 @@
-#Bonafide Brands
+#Ocupop Dream Machine
 
 ##Getting Started
 1. Install Bundler: `gem install bundler`
