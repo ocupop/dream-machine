@@ -1,0 +1,26 @@
+{
+  "name": "Dream Machine",
+  "version": "0.0.0",
+  "authors": [
+    "Tom Beck <tom@ocupop.com>"
+  ],
+  "description": "Ocupop internal project.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "waypoints": "^4.0.0",
+    "animate.css": "^3.5.2",
+    "flexboxgrid-sass": "^8.0.4"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,33 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link rel="apple-touch-icon" sizes="180x180" href="">
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="" color="#">
+  <meta name="apple-mobile-web-app-title" content="Bonafide Brands">
+  <meta name="application-name" content="Bonafide Brands">
+  
+  <meta property="og:title" content="Bonafide Brands">
+  <meta property="og:url" content="http://bonafidebrands.com">
+  <meta property="og:image" content="http://bonafidebrands.com/bonafidebrands_facebook.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="Bonafide brings together unique brands, authentic products, and category leaders. We bridge brands to market, leading them to the influencers and trendsetters of the industry.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/vendor/normalize.css">
+  <link rel="stylesheet" href="/css/vendor/main.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+  
+</head>

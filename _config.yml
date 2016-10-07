@@ -1,0 +1,16 @@
+# Site settings
+title: Dream Machine
+email:
+description:
+baseurl: "" # the subpath of your site, e.g. /clientname
+url: "" # the base hostname & protocol for your site
+
+
+# Build settings
+safe: false
+source: src
+
+gems:
+  - jekyll-bootstrap-sass
+  - jekyll-sitemap
+  - jekyll-contentblocks
