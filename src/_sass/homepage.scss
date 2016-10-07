@@ -2,17 +2,6 @@
   Splash
 ----------------------------------------- */
 
-body {
-  font-family: 'Quicksand', sans-serif;
-  //color: #fff;
-  font-size: 16px;
-}
-
-h1, h2, h3 {
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-}
 
 .container {
   margin: 0 auto;
@@ -90,26 +79,7 @@ h1, h2, h3 {
   }
 }
 
-#page-footer {
-  background: #272729;
-  padding: 65px 0;
-  .footer-logo {
-    max-width: 350px;
-    margin: 0 auto;
-    padding-bottom: 15px;
-    img {
-      width: 100%;
-    }
-  }
-  .contact {
-    text-align: center;
-    a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 14px;
-    }
-  }
-}
+
 
 @media (max-width: 768px) {
   #page {
