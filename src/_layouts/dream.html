@@ -6,15 +6,31 @@ status:
  - completed
 ---
 
-<div class="container">
-  <div class="row">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
-    <p>{{ page.dreamer }}</p>
-    <p>{{ page.status }}</p>
-    {% for image in page.dream_images %}
-      <img src="{{ image.dream_image }}" alt="">
-    {% endfor %}
+<section>
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="col-sm-6">
+        <img src="http://placehold.it/350x350" class="img-responsive center-block" alt="featured image">
+      </div>
+      <div class="col-sm-6">
+        {% assign dreamer = site.dreamers | where: "slug", page.dreamer  | first %}
+        <img src="{{ dreamer.avatar }}" class="img-responsive" style="max-width: 50px;" alt="">
+        <h3>{{ dreamer.name }}</h3>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+        <p>{{ page.status }} - {{ page.date }}</p>
+      </div>
+    </div>
   </div>
-</div>
-
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      {% for image in page.dream_images %}
+        <div class="col-sm-4 col-md-3">
+          <img src="{{ image.dream_image }}" class="img-responsive" alt="{{ caption }}">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
