@@ -2,21 +2,25 @@
 layout: default
 title: Dream Machine
 ---
-<main class="bg">
-  <div class="intro">
-    <h2>Dream Machine</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repellendus amet, minima debitis aut, id consectetur nam reiciendis cumque modi voluptatem, ipsa maxime beatae earum voluptatibus doloribus eligendi similique. Molestiae!</p>
-  </div>
-  <div class="img-banner">
-    {% for dream in (1..4) %}
-    <div class="thumb"><a href="#" target="_blank"><img src="http://placehold.it/350x150" alt="dream title / dreamer name"></a></div>
-    {% endfor %}
-  </div>
-  <div class="social">
-    <div class="social-icon">
-      <a href="https://www.instagram.com/ocupop/?hl=en" target="_blank"><img src="{{ site.baseurl }}icons/instagram.svg" alt="instagram"></a>
+<section class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Dream Machine</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repellendus amet, minima debitis aut, id consectetur nam reiciendis cumque modi voluptatem, ipsa maxime beatae earum voluptatibus doloribus eligendi similique. Molestiae!</p>
+      </div>
     </div>
-    <h3>Follow us on Instagram to find out about our website launch!</h3>
   </div>
-</main>
+</section>
+
+<section id="" class="">
+  {% include diamond_grid.html %}
+</section>
+
+<section class="social hide">
+  <div class="social-icon">
+    <a href="https://www.instagram.com/ocupop/?hl=en" target="_blank"><img src="{{ site.baseurl }}icons/instagram.svg" alt="instagram"></a>
+  </div>
+  <h3>Follow us on Instagram to find out about our website launch!</h3>
+</section>
 
