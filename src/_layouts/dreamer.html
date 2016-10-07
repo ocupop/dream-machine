@@ -1,3 +1,13 @@
 ---
 layout: default
 ---
+<h1>{{ page.name }}</h1>
+<img src="{{ page.avatar }}" alt="">
+<h2>{{ page.email }}</h2>
+{% for object in page.dreams %}
+  {% assign dream = site.dreams | where: "slug", object  | first %}
+  {% assign featured = dream.dream_images[0].dream_image %}
+  <h2>{{ dream.title }}</h2>
+  <p>{{ dream.description }}</p>
+  <img src="{{ featured }}" alt="">
+{% endfor %}

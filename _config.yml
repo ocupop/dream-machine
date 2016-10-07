@@ -10,6 +10,7 @@ collections:
     output: true
   dreams:
     output: true  
+
 defaults:   
   - scope:
       type: dreamers
