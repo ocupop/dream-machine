@@ -68,3 +68,41 @@ section {
   }
 }
 #footernav {}
+
+/* -----------------------------------------
+  General Classes
+----------------------------------------- */
+
+// $gray-base:         #0D0D0D;
+// $gray-darker:       #1A1A1A;
+// $gray-dark:         #414042;
+// $gray:              #58595B;
+// $gray-light:        #D0D2D3;
+// $gray-lighter:      #F0F1F1;
+
+.gray-base {
+  background-color: $gray-base;
+}
+
+.gray-darker {
+  background-color: $gray-darker;
+}
+
+.gray-dark {
+  background-color: $gray-dark;
+}
+
+.gray {
+  background-color: $gray;
+}
+
+.gray-light {
+  background-color: $gray-light;
+}
+
+.gray-lighter {
+  background-color: $gray-lighter;
+}
+
+
+
