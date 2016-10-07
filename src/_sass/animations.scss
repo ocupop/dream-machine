@@ -1,3 +1,11 @@
 /* -----------------------------------------
   Animations
 ----------------------------------------- */
+
+.svg-clipped {
+
+  &.diamond{
+    -webkit-clip-path:url(#diamondPath);
+    clip-path:url(#diamondPath);
+  } 
+}
