@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  a {
+    display: inline-block;
+    margin: 0 auto 5px auto;
+  }
 }
 .clip-path {
   width: 0;
@@ -14,8 +18,7 @@
   position: relative;
   width: 385px;
   height: 385px;
-  margin: 0 auto 5px auto;
-  background-image: url(/uploads/sled.jpeg); 
+  margin: 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

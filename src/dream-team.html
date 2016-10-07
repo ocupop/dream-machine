@@ -2,3 +2,21 @@
 layout: default
 title: Dream Team
 ---
+<section>
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="col-xs">
+          <h1>Dream Team</h1>
+          <div class="diamond-grid">
+            {% for dream in (1..6) %}
+            <a href="/dreamers/jon-burr">
+              <div class="svg-clipped" style="background-image: url(http://placehold.it/500x500/?text=Dreamer+{{ forloop.index }});">
+
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+      </div>
+    </div>
+  </div>
+</section>

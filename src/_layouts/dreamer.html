@@ -63,7 +63,8 @@ layout: default
   </div>
 </section>
 <section>
-  <div class="container">
+  {% include dream_grid.html %}
+  <div class="container hide">
     <div class="row">
       {% if page.dreams %}
       {% for object in page.dreams %}

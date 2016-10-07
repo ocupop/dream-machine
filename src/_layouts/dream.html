@@ -24,13 +24,5 @@ status:
   </div>
 </section>
 <section>
-  <div class="container">
-    <div class="row">
-      {% for image in page.dream_images %}
-        <div class="col-sm-4 col-md-3">
-          <img src="{{ image.dream_image }}" class="img-responsive" alt="{{ caption }}">
-        </div>
-      {% endfor %}
-    </div>
-  </div>
+  {% include dream_grid.html %}
 </section>
