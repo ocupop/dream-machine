@@ -1,0 +1,21 @@
+---
+layout: null
+---
+{
+  {% for dreamer in site.dreamers %}
+    "{{ dreamer.slug }}": {
+      "title": "{{ dreamer.name | xml_escape }}",
+      "url": " {{ dreamer.url | xml_escape | prepend: site.url }}",
+      "avatar": "{{ dreamer.avatar }}",
+      "email": "{{ dreamer.email | xml_escape }}"
+    },
+  {% endfor %}
+  {% for dream in site.dreams %}
+    "{{ dream.slug }}": {
+      "title": "{{ dream.title | xml_escape }}",
+      "url": "{{ dream.url | xml_escape | prepend: site.url }}",
+      "description": "{{ dream.description | xml_escape }}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+}
