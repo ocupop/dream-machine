@@ -1,0 +1,21 @@
+- name: badge 1
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
+  badge_image: http://placehold.it/150x150?text=badge+1
+- name: badge 2
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
+  badge_image: http://placehold.it/150x150?text=badge+2
+- name: badge 3
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
+  badge_image: http://placehold.it/150x150?text=badge+3
+- name: badge 4
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
+  badge_image: http://placehold.it/150x150?text=badge+4
+- name: badge 5
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
+  badge_image: http://placehold.it/150x150?text=badge+5
+- name: badge 6
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
+  badge_image: http://placehold.it/150x150?text=badge+6
+- name: badge 7
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
+  badge_image: http://placehold.it/150x150?text=badge+7      

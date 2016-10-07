@@ -10,7 +10,8 @@ status:
   <div class="container">
     <div class="row middle-xs">
       <div class="col-sm-6">
-        <img src="http://placehold.it/350x350" class="img-responsive center-block" alt="featured image">
+        {% assign featured = page.dream_images[0].dream_image %}
+        <img src="{{ featured }}" class="img-responsive center-block" alt="featured image">
       </div>
       <div class="col-sm-6">
         {% assign dreamer = site.dreamers | where: "slug", page.dreamer  | first %}
