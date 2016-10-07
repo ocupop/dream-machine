@@ -2,6 +2,10 @@
   Animations
 ----------------------------------------- */
 
-img.diamond {
-  clip-path: url(#diamondPath);
+.svg-clipped {
+
+  &.diamond{
+    -webkit-clip-path:url(#diamondPath);
+    clip-path:url(#diamondPath);
+  } 
 }
