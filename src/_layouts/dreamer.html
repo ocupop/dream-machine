@@ -3,15 +3,18 @@ layout: default
 ---
 <div class="container">
   <div class="row">
-    <h1>{{ page.name }}</h1>
-    <img src="{{ page.avatar }}" alt="">
-    <h2>{{ page.email }}</h2>
-
+    <div class="col-sm-6">
+      <img src="{{ page.avatar }}" class="img-responsive" alt="{{ page.name }} avatar">
+    </div>
+    <div class="col-sm-6">
+      <h1>{{ page.name }}</h1>
+      <h3>{{ page.email }}</h3>
+    </div>
   </div>
   <div class="row">
     {% if page.dreams %}
     {% for object in page.dreams %}
-      <div class="col-md-3">
+      <div class="col-md-12">
         {% assign dream = site.dreams | where: "slug", object  | first %}
         {% assign featured = dream.dream_images[0].dream_image %}
         <h2>{{ dream.title }}</h2>
