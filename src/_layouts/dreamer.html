@@ -17,48 +17,11 @@ layout: default
 <section>
   <div class="container">
     <div class="row">
+      {% for badge in site.data.badges %}
       <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
+        <img src="{{ badge.badge_image }}" class="img-responsive" alt="{{ badge.name }}">
       </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-    </div>
-  </div>
-</section>  
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive"  alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
-      <div class="col-xs">
-        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -67,12 +30,14 @@ layout: default
     <div class="row">
       {% if page.dreams %}
       {% for object in page.dreams %}
-        <div class="col-md-12">
+        <div class="col-sm-4 col-md-3">
           {% assign dream = site.dreams | where: "slug", object  | first %}
           {% assign featured = dream.dream_images[0].dream_image %}
-          <h2>{{ dream.title }}</h2>
-          <p>{{ dream.description }}</p>
-          <!-- <img src="{{ featured }}" class="img-responsive" alt=""> -->
+          <!-- <h2>{{ dream.title }}</h2>
+          <p>{{ dream.description }}</p> -->
+          <a href="{{ dream.url }}">
+            <img src="{{ featured }}" class="img-responsive" alt="">
+          </a>
         </div>
       {% endfor %}
       {% endif %}
