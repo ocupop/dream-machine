@@ -10,16 +10,15 @@ collections:
     output: true
   dreams:
     output: true  
-
 defaults:   
-- scope:
-    type: dreamers
-  values:
-    layout: dreamers
-- scope:
-    type: dreams
-  values:
-    layout: dream    
+  - scope:
+      type: dreamers
+    values:
+      layout: dreamer
+  - scope:
+      type: dreams
+    values:
+      layout: dream    
 
 # Build settings
 safe: false
