@@ -2,24 +2,16 @@
 layout: default
 title: Sandbox
 ---
-<div class="container">
-  <div class="row">
-    <div class="col-xs-6">
-      <div class="content">
-        <div class="row">
-          <div class="svg-clipped diamond">
-          </div>
+<section class="gray">
+<ul class="diamonds">
+  {% for diamond in (1..10) %}
+    <li>
+      <a href="#" class="diamond">
+        <div class="diamond-content">
+          {{ site.title }}
         </div>
-        <svg class="clip-path">
-          <defs>
-              <clipPath id="diamnodPath" clipPathUnits="objectBoundingBox">
-                  <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
-              </clipPath>
-          </defs> 
-        </svg>
-
-      </div>
-    </div>
-  </div>
-</div>
-
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+</section>
