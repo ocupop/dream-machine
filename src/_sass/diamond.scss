@@ -1,0 +1,49 @@
+$diamonds:
+  sm 75px,
+  md 150px,
+  lg 250px;
+
+@each $d in $diamonds {
+  $name: nth($d, 1);
+  $size: nth($d, 2);
+  .diamond-#{$name} {
+    width: $size;
+    height: $size;
+    margin: $size * .2;
+    .diamond-content {
+      width: $size * 1.6;
+      height: $size * 1.6;
+      margin-left: $size * -0.286;
+      margin-top: $size * -0.286;
+      vertical-align: middle;
+    }
+  }
+}
+
+.diamond-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.diamond-content {
+  transform: rotate(45deg);
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.diamond {
+  display: inline-block;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  &:hover {
+    opacity: .5;
+  }
+}

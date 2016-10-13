@@ -8,18 +8,70 @@ status:
 
 <section>
   <div class="container">
+    <div class="diamond-wrapper">
+      <div class="diamond diamond-md">
+        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+          
+        </div>
+      </div>
+      <div class="diamond diamond-lg">
+        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+          
+        </div>
+      </div>
+      <div class="diamond diamond-md">
+        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section>
+  <div class="container">
     <div class="row middle-xs">
       <div class="col-sm-6">
         {% assign featured = page.dream_images[0].dream_image %}
         <img src="{{ featured }}" class="img-responsive center-block" alt="featured image">
       </div>
       <div class="col-sm-6">
-        {% assign dreamer = site.dreamers | where: "slug", page.dreamer  | first %}
+        
         <img src="{{ dreamer.avatar }}" class="img-responsive" style="max-width: 50px;" alt="">
-        <h3>{{ dreamer.name }}</h3>
+        
+      </div>
+    </div>
+  </div>
+</section> -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% assign dreamer = site.dreamers | where: "slug", page.dreamer  | first %}
         <h1>{{ page.title }}</h1>
+        <p>by: {{ dreamer.name }}</p>
         <p>{{ page.description }}</p>
         <p>{{ page.status }} - {{ page.date | date_to_long_string }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="progress">
+  <div class="container">
+    <div class="diamond-wrapper">
+      <div class="diamond diamond-sm">
+        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+          
+        </div>
+      </div>
+      <div class="diamond diamond-sm">
+        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+          
+        </div>
+      </div>
+      <div class="diamond diamond-sm">
+        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+          
+        </div>
       </div>
     </div>
   </div>

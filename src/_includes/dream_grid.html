@@ -1,9 +1,19 @@
 <ul class="diamonds">
-{% for dream in (1..10) %}
+{% for dream in (1..11) %}
   <li>
     <a href="#" class="diamond">
+      <div class="diamond-left">
+        <div class="diamond-left-content" style="background-image: url(http://placehold.it/500x500/?text=avatar+{{ forloop.index }});">
+          
+        </div>
+      </div>
       <div class="diamond-content" style="background-image: url(http://placehold.it/500x500/990000/ffffff?text=Dream+{{ forloop.index }});">
         {{ site.title }}
+      </div>
+      <div class="diamond-right">
+        <div class="diamond-right-content" style="background-image: url(http://placehold.it/500x500/?text=scape+{{ forloop.index }});">
+          
+        </div>
       </div>
     </a>
   </li>
