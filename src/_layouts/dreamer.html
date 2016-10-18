@@ -3,45 +3,73 @@ layout: default
 ---
 <section>
   <div class="container">
-    <div class="row middle-xs">
-      <div class="col-sm-6">
-        <img src="{{ page.avatar }}" class="img-responsive" alt="{{ page.name }} avatar">
+    <div class="diamond-wrapper">
+      <div class="diamond diamond-md">
+        <div class="diamond-content" style="background-image: url({{ page.avatar_image }})">
+          
+        </div>
       </div>
-      <div class="col-sm-6">
-        <h1>{{ page.name }}</h1>
-        <h3>{{ page.email }}</h3>
+      <div class="diamond diamond-lg">
+        <div class="diamond-content" style="background-image: url({{ page.profile_image }})">
+          
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section>
+<section class="gray-dark">
   <div class="container">
+    <div class="row middle-xs">
+      <div class="col-xs">
+        <h1>{{ page.name }}</h1>
+        <h3>{{ page.animal_name }}</h3>
+        <p>{{ page.details }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="gray-lighter">
+  <div class="container">
+    <h3 class="text-center">Dream Achievement Badges</h3>
     <div class="row">
       {% for badge in site.data.badges %}
-      <div class="col-xs">
-        <img src="{{ badge.badge_image }}" class="img-responsive" alt="{{ badge.name }}">
+      <div class="col-xs text-center">
+        <div class="diamond diamond-sm">
+          <div class="diamond-content" style="background-image: url({{ badge.badge_image }})">
+          </div>
+        </div>
+        <p>{{ badge.name }}</p>
+        <span class="border-circle">1</span>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
 <section class="gray-dark">
-  {% include dream_grid.html %}
-  <div class="container hide">
-    <div class="row">
-      {% if page.dreams %}
-      {% for object in page.dreams %}
-        <div class="col-sm-4 col-md-3">
-          {% assign dream = site.dreams | where: "slug", object  | first %}
-          {% assign featured = dream.dream_images[0].dream_image %}
-          <!-- <h2>{{ dream.title }}</h2>
-          <p>{{ dream.description }}</p> -->
-          <a href="{{ dream.url }}">
-            <img src="{{ featured }}" class="img-responsive" alt="">
-          </a>
-        </div>
-      {% endfor %}
-      {% endif %}
-    </div>
+  <div class="container">
+    {% if page.dreams %}
+    {% for object in page.dreams %}
+    <div class="row middle-xs">
+      <div class="col-xs text-center">
+        {% assign dream = site.dreams | where: "slug", object  | first %}
+        {% assign featured = dream.dream_images[0].dream_image %}
+        <a href="{{ dream.url }}">
+          <div class="diamond diamond-lg">
+            <div class="diamond-content" style="background-image: url({{ featured }})">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs">
+        <h2>{{ dream.title }}</h2>
+        <p>Date logged: &nbsp;{{ dream.date | date: "%D"}}</p>
+        {% if dream.description %}
+          <p>{{ dream.description }}</p>
+        {% endif %}
+        <p>Current Status: &nbsp;{{ dream.status }}</p>  
+      </div>
+    </div>  
+    {% endfor %}
+    {% endif %}
   </div>
 </section>  

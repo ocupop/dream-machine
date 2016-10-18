@@ -6,7 +6,6 @@ dreamer: jon-burr
 dream_images:
  - dream_image: /uploads/sled.jpeg
    caption: Bilin' it n feelin it 
-status: created
-badges:
- -
+status: logged
+badges: treasure
 ---

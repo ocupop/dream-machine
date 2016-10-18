@@ -10,17 +10,19 @@ status:
   <div class="container">
     <div class="diamond-wrapper">
       <div class="diamond diamond-md">
-        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+        {% assign avatar = site.dreamers | where: "slug", page.dreamer  | first %}
+        <div class="diamond-content" style="background-image: url({{ avatar.avatar_image }})">
           
         </div>
       </div>
       <div class="diamond diamond-lg">
-        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+        {% assign featured = page.dream_images[0].dream_image %}
+        <div class="diamond-content" style="background-image: url({{ featured }});">
           
         </div>
       </div>
       <div class="diamond diamond-md">
-        <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
+        <div class="diamond-content" style="background-image: url('http://placehold.it/350x350')">
           
         </div>
       </div>

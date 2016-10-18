@@ -3,7 +3,7 @@
 ----------------------------------------- */
 html {}
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
 }
 
@@ -59,7 +59,7 @@ section {
 
 #progress {
   .diamond-wrapper {
-    justify-content: space-around:
+    justify-content: space-around;
   }
 }
 
@@ -71,7 +71,10 @@ section {
   .navbar {
     margin: 0;
   }
-  .navbar-brand {}
+  .navbar-brand {
+    text-shadow: none;
+    color: #fff;
+  }
   .navbar-nav {
     margin: 0;
     li {
@@ -146,5 +149,14 @@ section {
   }
 }
 
+.border-circle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $gray-dark;
+  margin: 0 auto;
+  padding: 2px;
+}
 
 
