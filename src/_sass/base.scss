@@ -39,22 +39,32 @@ section {
 }
 
 #dreamers {
-  .row {
-    margin-top: -40px;
+  .diamond-md {
+    margin: 23px;
+    z-index: 50;
+  }
+  .diamond-lg {
+    margin: 25px 35.5px;
   }
   .name {
     position: absolute;
     left: 0;
   }
-  .row-reverse {
-    .diamond-lg {
-      margin-left: -90px;
-    }
-    .name {
-      left: auto;
-      right: 0;
+  .row {
+    &.row-reverse {
+      .diamond-wrapper {
+        flex-direction: row-reverse;
+      }
+      .diamond-lg {
+        margin-left: -90px;
+      }
+      .name {
+        left: auto;
+        right: 0;
+      }
     }
   }
+  
 }
 
 #progress {
@@ -146,6 +156,10 @@ section {
   padding: 100px 0;
   p {
     font-size: 50px;
+
+  }
+  small {
+    font-size: 25px;
   }
 }
 

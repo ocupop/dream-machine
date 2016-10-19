@@ -22,28 +22,13 @@ status:
         </div>
       </div>
       <div class="diamond diamond-md">
-        <div class="diamond-content" style="background-image: url('http://placehold.it/350x350')">
+        <div class="diamond-content" style="background-image: url({{ site.data.badges[page.badges.first].badge_image }})">
           
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- <section>
-  <div class="container">
-    <div class="row middle-xs">
-      <div class="col-sm-6">
-        {% assign featured = page.dream_images[0].dream_image %}
-        <img src="{{ featured }}" class="img-responsive center-block" alt="featured image">
-      </div>
-      <div class="col-sm-6">
-        
-        <img src="{{ dreamer.avatar }}" class="img-responsive" style="max-width: 50px;" alt="">
-        
-      </div>
-    </div>
-  </div>
-</section> -->
 <section>
   <div class="container">
     <div class="row">
@@ -77,7 +62,4 @@ status:
       </div>
     </div>
   </div>
-</section>
-<section class="gray-dark">
-  {% include dream_grid.html %}
 </section>

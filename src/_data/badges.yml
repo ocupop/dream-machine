@@ -1,21 +1,28 @@
-- name: Self-Improvement
+self:
+  name: Self-Improvement
   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
-  badge_image: http://placehold.it/150x150?text=badge+1
-- name: Community
+  badge_image: /img/badge-test.svg
+community:
+  name: Community
   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
   badge_image: http://placehold.it/150x150?text=badge+2
-- name: Exploration
+exploration:  
+  name: Exploration
   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
   badge_image: http://placehold.it/150x150?text=badge+3
-- name: Stability
+stability:  
+  name: Stability
   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
   badge_image: http://placehold.it/150x150?text=badge+4
-- name: Vitality
+vitality:
+  name: Vitality
   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
   badge_image: http://placehold.it/150x150?text=badge+5
-- name: Craftsman
+craftsman:  
+  name: Craftsman
   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
   badge_image: http://placehold.it/150x150?text=badge+6
-- name: Treasure
+treasure:   
+  name: Treasure
   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sed cum, consequuntur illo maiores a culpa nostrum iure cupiditate ad atque autem impedit architecto fugiat quae sint sequi velit quos.'
-  badge_image: http://placehold.it/150x150?text=badge+7      
+  badge_image: /img/badge-test.svg      

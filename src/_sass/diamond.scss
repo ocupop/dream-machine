@@ -1,3 +1,6 @@
+// possible solution for double borders, multiple box shadows with cumulative effect
+// box-shadow: 0 0 0 1px black, 0 0 0 15px white, 0 0 0 16px black;
+
 $diamonds:
   xs 45px,
   sm 75px,
@@ -8,15 +11,23 @@ $diamonds:
   $name: nth($d, 1);
   $size: nth($d, 2);
   .diamond-#{$name} {
+    // when doing testing with icons with 100% and height 100% worked nicely with svgs, fills available space
+    // may need a solution where a class is added if we want the background filled vs when were using icons that need to have some space around them
     width: $size;
     height: $size;
-    margin: $size * .2;
+    margin: $size * .286;
+    border: 1px solid $gray;
     .diamond-content {
-      width: $size * 1.6;
-      height: $size * 1.6;
-      margin-left: $size * -0.286;
-      margin-top: $size * -0.286;
-      vertical-align: middle;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      &.fill {
+        width: $size * 1.6;
+        height: $size * 1.6;
+        margin-left: $size * -0.286;
+        margin-top: $size * -0.286;
+        vertical-align: middle;
+      }
     }
   }
 }

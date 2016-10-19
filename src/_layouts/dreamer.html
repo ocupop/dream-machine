@@ -10,7 +10,7 @@ layout: default
         </div>
       </div>
       <div class="diamond diamond-lg">
-        <div class="diamond-content" style="background-image: url({{ page.profile_image }})">
+        <div class="diamond-content fill" style="background-image: url({{ page.profile_image }})">
           
         </div>
       </div>
@@ -32,7 +32,8 @@ layout: default
   <div class="container">
     <h3 class="text-center">Dream Achievement Badges</h3>
     <div class="row">
-      {% for badge in site.data.badges %}
+      {% for object in site.data.badges %}
+      {% assign badge = object[1] %}
       <div class="col-xs text-center">
         <div class="diamond diamond-sm">
           <div class="diamond-content" style="background-image: url({{ badge.badge_image }})">
@@ -55,7 +56,7 @@ layout: default
         {% assign featured = dream.dream_images[0].dream_image %}
         <a href="{{ dream.url }}">
           <div class="diamond diamond-lg">
-            <div class="diamond-content" style="background-image: url({{ featured }})">
+            <div class="diamond-content fill" style="background-image: url({{ featured }})">
             </div>
           </div>
         </a>

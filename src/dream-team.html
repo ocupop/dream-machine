@@ -15,50 +15,22 @@ title: Dream Team
 </section>
 <section id="dreamers">
   <div class="container">
-    <div class="row">
-      <div class="diamond-wrapper">
-        <p class="name">FirstName Lastname<br><span class="pull-right">Animal</span></p>
-        <div class="diamond diamond-md">
-          <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
-            
+    {% for dreamer in site.dreamers %}
+      <div class="row {% cycle '', 'row-reverse' %}">
+        <div class="diamond-wrapper">
+          <p class="name">{{ dreamer.name }}<br><span class="pull-right">The {{ dreamer.animal_name }}</span></p>
+          <div class="diamond diamond-md">
+            <div class="diamond-content" style="background-image: url({{ dreamer.avatar_image }})">
+              
+            </div>
           </div>
-        </div>
-        <div class="diamond diamond-lg">
-          <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row row-reverse">
-      <div class="diamond-wrapper">
-        <div class="diamond diamond-lg">
-          <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
-            
-          </div>
-        </div>
-        <div class="diamond diamond-md">
-          <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
-            
-          </div>
-        </div>
-        <p class="name">FirstName Lastname<br><span class="pull-right">Animal</span></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="diamond-wrapper">
-        <p class="name">FirstName Lastname<br><span class="pull-right">Animal</span></p>
-        <div class="diamond diamond-md">
-          <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
-            
-          </div>
-        </div>
-        <div class="diamond diamond-lg">
-          <div class="diamond-content" style="background-image: url(http://placehold.it/350x350)">
-            
+          <div class="diamond diamond-lg">
+            <div class="diamond-content fill" style="background-image: url({{ dreamer.profile_image }})">
+              
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    {% endfor %}
   </div>
 </section>

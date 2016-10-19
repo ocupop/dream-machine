@@ -1,17 +1,20 @@
 <ul class="diamonds">
-{% for dream in (1..11) %}
+{% for dream in site.dreams %}
   <li>
-    <a href="#" class="diamond">
+    <a href="#" class="grid-diamond">
+      {% assign avatar = site.dreamers | where: "slug", dream.dreamer | first %}
       <div class="diamond-left">
-        <div class="diamond-left-content" style="background-image: url(http://placehold.it/500x500/?text=avatar+{{ forloop.index }});">
+        <div class="diamond-left-content" style="background-image: url({{ avatar.avatar_image }});">
           
         </div>
       </div>
-      <div class="diamond-content" style="background-image: url(http://placehold.it/500x500/990000/ffffff?text=Dream+{{ forloop.index }});">
+      {% assign featured = dream.dream_images[0].dream_image %}
+      <div class="diamond-content" style="background-image: url({{ featured }});">
         {{ site.title }}
       </div>
       <div class="diamond-right">
-        <div class="diamond-right-content" style="background-image: url(http://placehold.it/500x500/?text=scape+{{ forloop.index }});">
+        {% assign badge = site.data.badges[dream.badges.first].badge_image %}
+        <div class="diamond-right-content" style="background-image: url({{ badge }});">
           
         </div>
       </div>
